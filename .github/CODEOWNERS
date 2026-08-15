@@ -1,0 +1,19 @@
+# CODEOWNERS: GitHub pide revisión automáticamente a quien aparezca aquí
+# cuando un Pull Request toca los archivos que le corresponden.
+#
+# Formato:  <ruta>  @usuario-de-github
+# Gana la ÚLTIMA regla que coincida, no la primera.
+
+# Regla de respaldo: cubre todo lo que no tenga dueño más abajo.
+*   @samsalinasTec
+
+# Dueños por área (protocolo de trabajo, sección 4.2).
+# Descomenta cada línea y pon el usuario de GitHub cuando definan la tabla,
+# que hoy sigue en blanco. Un usuario inexistente hace que GitHub ignore
+# la regla en silencio, así que mejor dejarlas comentadas hasta entonces.
+
+# comercial/    @usuario
+# proyectos/    @usuario
+# tecnico/      @usuario
+# socios/       @usuario
+# decisiones/   @usuario

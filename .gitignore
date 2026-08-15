@@ -1,0 +1,13 @@
+# macOS crea estos archivos solo al abrir carpetas en Finder.
+.DS_Store
+
+# Obsidian guarda su configuración en .obsidian/.
+# Se ignora TODA la carpeta excepto app.json, porque app.json contiene los
+# ajustes de enlaces que el README exige como obligatorios (regla 2) y deben
+# viajar con el repositorio. El resto (workspace.json y demás) es estado
+# personal de cada quien y solo generaría conflictos.
+.obsidian/*
+!.obsidian/app.json
+
+# Temporales que dejan Word y Excel si alguien abre un adjunto dentro del repo.
+~$*

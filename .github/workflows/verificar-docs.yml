@@ -1,0 +1,19 @@
+# Corre en cada Pull Request y en cada push a main.
+# Si falla, GitHub marca el PR en rojo y no se debe mergear.
+name: Verificar documentación
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  enlaces:
+    name: Enlaces y wikilinks
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Revisar enlaces de los .md
+        run: python3 .github/scripts/verificar-enlaces.py
